@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waste Trends Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <label for="table-select">Database/Table:</label>
+        <select id="table-select"></select>
+
+        <details>
+            <summary>X Variables (Inputs)</summary>
+            <div id="x-vars"></div>
+        </details>
+        <details>
+            <summary>Y Variables (Outputs)</summary>
+            <div id="y-vars"></div>
+        </details>
+        <details>
+            <summary>Group By</summary>
+            <div id="group-by"></div>
+        </details>
+
+        <button id="refresh-btn">REFRESH</button>
+    </div>
+
+    <div class="content">
+        <div id="gallery">
+            <button id="scroll-left">&lt;</button>
+            <div id="gallery-images"></div>
+            <button id="scroll-right">&gt;</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
